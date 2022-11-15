@@ -1,0 +1,72 @@
+/* ================================================ Responsive Part ===================================== */
+@media (max-width:1199px) {
+    .section .container{
+        padding-top: 70px;
+    }
+    .aside{
+        left: -270px;
+    }
+    .aside.open{
+        left: 0;
+    }
+    .aside .nav-toggler{
+        display: flex;
+        left: 30px;
+    }
+    .aside .nav-toggler.open{
+        left: 300px;
+    }
+    .section{
+        left: 0;
+    }
+    .section.open{
+        left: 270px;
+    }
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media (max-width:991px) {
+    .contact .contact-info-item,
+    .project .project-item,
+    .service .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img{
+        display: none;
+    }
+}
+
+
+@media (max-width:767px){
+    .about .about-content .personal-info,
+    .about .about-content .skills,
+    .about .about-content .education,
+    .about .about-content .experience,
+    .service .service-item,
+    .project .project-item,
+    .contact .contact-info-item,
+    .contact .contact-form .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home h3.hello span{
+        line-height: 1;
+    }
+    .home h3.my-profession{
+        font-size: 23px;
+        margin: 15px 0;
+    }
+    .home .home-info p{
+        font-size: 15px;
+    }
+
+
+}
