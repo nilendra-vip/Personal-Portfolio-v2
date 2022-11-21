@@ -49,7 +49,7 @@ window.addEventListener("load",() =>{
 
 // Text animation
 var typed = new Typed(".typing",{
-    strings:["Front-End Web Developer","Back-End Web Developer","Full Stack Web Developer"],
+    strings:["Front-End Developer","Back-End Developer","Full Stack Developer","Web Designer"],
     typeSpeed:200,
     BackSpeed:500,
     loop:true
