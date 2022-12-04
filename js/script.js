@@ -6,11 +6,11 @@ styleSwitcherToggle.addEventListener("click", function(){
 })
 
 // Hide style switcher on scroll
-window.addEventListener("scroll", function(){
-    if(document.querySelector(".style-switcher").classList.contains("open")){
-        document.querySelector(".style-switcher").classList.remove("open");
-    }
-})
+// window.addEventListener("scroll", function(){
+//     if(document.querySelector(".style-switcher").classList.contains("open")){
+//         document.querySelector(".style-switcher").classList.remove("open");
+//     }
+// })
 
 // theme colors
 const alternateStyles = document.querySelectorAll(".alternate-style");
@@ -126,3 +126,36 @@ const nav = document.querySelector(".nav"),
             allSection[i].classList.toggle("open");
         }
     }
+
+
+
+
+
+    function projects(){
+        var project=[
+            {image:"./images/project/project1.jpg"},
+            {image:"./images/project/project2.jpg"},
+            {image:"./images/project/project3.jpg"},
+            {image:"./images/project/project4.jpg"},
+            {image:"./images/project/project5.jpg"},
+            {image:"./images/project/project6.jpg"},
+            {image:"./images/project/project7.jpg"},
+            {image:"./images/project/project8.jpg"},
+            {image:"./images/project/project9.jpg"},
+            {image:"./images/project/project10.jpg"},
+            {image:"./images/project/project11.jpg"},
+        ]
+        
+        var clutter="";
+        project.forEach(function(data){
+            clutter +=`<div class="project-item padd-15">
+                            <div class="project-item-inner shodow-dark">
+                                <div class="project-img">
+                                    <a href="#"><img src="${data.image}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>`
+        })
+        document.querySelector(".project .container .clutter ").innerHTML=clutter;
+    }
+    projects();
