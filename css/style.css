@@ -291,7 +291,6 @@ ul{
 .home{
     min-height: 100vh;
     display: flex;
-
     color: var(--text-black-900);
 }
 .home .home-info{
@@ -337,8 +336,8 @@ ul{
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
     position: absolute;
-    right: -20px;
-    bottom: -30px;
+    right: -60px;
+    bottom: -20px;
 }
 .home-img::before{
     content: "";
@@ -347,8 +346,8 @@ ul{
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
     position: absolute;
-    left: -20px;
-    top: -30px;
+    left: -5px;
+    top: -20px;
 }
 .home .home-img img{
     height: 100%;
