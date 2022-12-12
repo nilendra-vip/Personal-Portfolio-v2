@@ -644,17 +644,30 @@ ul{
     font-size: 15px;
     margin-bottom: 60px;
 }
+.contact .social{
+    /* background-color: springgreen; */
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.contact .row a{
+    width: 20%;
+}
 .contact .contact-info-item{
     flex: 0 0 25%;
-    max-width: 25%;
+    /* max-width: 25%; */
     text-align: center;
     margin-bottom: 60px;
+    padding-top: 30px;
 }
 .contact .contact-info-item .icon{
     display: inline-block;
 }
-.contact .contact-info-item .icon .fa{
+.contact .contact-info-item .icon .fa {
     font-size: 25px;
+    color: var(--skin-color);
+}
+.contact .contact-info-item .icon i{
+    font-size: 30px;
     color: var(--skin-color);
 }
 .contact .contact-info-item h4{
