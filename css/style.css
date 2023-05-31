@@ -327,7 +327,7 @@ ul{
 }
 .home .home-img{
     /* flex: 0 0 40%; */
-    width: 30%;
+    width: 36%;
     height: 500px;
     /* background-color: red; */
     /* border: 1px solid gray; */
@@ -336,23 +336,23 @@ ul{
 }
 .home-img::after{
     content: "";
-    height: 80px;
-    width: 80px;
+    height: 100%;
+    width: 100%;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
     position: absolute;
-    right: -90px;
-    bottom: -50px;
+    right: 0px;
+    bottom: 0px;
 }
 .home-img::before{
     content: "";
-    height: 80px;
-    width: 80px;
+    height: 100%;
+    width: 100%;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 0px;
+    top: 0px;
 }
 #home .btn{
     width: fit-content;
