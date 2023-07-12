@@ -521,6 +521,9 @@ ul{
     top: 0;
     background-color: var(--skin-color);
 }
+.about .about-content .timeline .timeline-item p{
+    color: var(--text-black-700);
+}
 .about .about-content .timeline .circle-dot{
     position: absolute;
     left: 0;
@@ -709,15 +712,19 @@ ul{
     text-align: center;
     margin-bottom: 60px;
     padding-top: 30px;
+    /* background-color: tomato; */
 }
 .contact .contact-info-item .icon{
     display: inline-block;
+    /* background-color: springgreen; */
+    margin: -16px 0 0px;
 }
 .contact .contact-info-item .icon .fa {
     font-size: 25px;
     color: var(--skin-color);
 }
 .contact .contact-info-item .icon i{
+    margin-top: -30px;
     font-size: 30px;
     color: var(--skin-color);
 }

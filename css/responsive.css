@@ -169,6 +169,46 @@ body.dark{
         scale: 1;
     }
 
+
+    .contact-title{
+        color: var(--skin-color);
+        text-align: center;
+        font-size: 23px;
+        margin-bottom: 5px;
+        
+    }
+    .contact-sub-title{
+        color: var(--text-black-900);
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+    .contact .social{
+        justify-content: center;
+        margin-bottom: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact .row a{
+        width: 100%;
+    }
+    .contact .contact-info-item{
+        margin-bottom: 10px;
+    }
+   
+    .contact .contact-info-item .icon .fa {
+        font-size: 30px;
+    }
+    .contact .contact-info-item .icon i{
+        font-size: 35px;
+    }
+    .contact .contact-info-item h4{
+        font-size: 20px;
+    }
+    .contact .contact-info-item p{
+        font-size: 18px;
+    }
+
     
 
 }
