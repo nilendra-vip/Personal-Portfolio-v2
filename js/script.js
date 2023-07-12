@@ -5,12 +5,7 @@ styleSwitcherToggle.addEventListener("click", function(){
     document.querySelector(".style-switcher").classList.toggle("open");
 })
 
-// Hide style switcher on scroll
-// window.addEventListener("scroll", function(){
-//     if(document.querySelector(".style-switcher").classList.contains("open")){
-//         document.querySelector(".style-switcher").classList.remove("open");
-//     }
-// })
+
 
 // theme colors
 const alternateStyles = document.querySelectorAll(".alternate-style");
@@ -49,9 +44,8 @@ window.addEventListener("load",() =>{
 
 // Text animation
 var typed = new Typed(".typing",{
-    strings:["Front-End Developer","Back-End Developer","UI/UX Designer"],
-    typeSpeed:100,
-    BackSpeed:500,
+    strings:["Front-End Developer","Back-End Developer","UI Designer", "Freelancer"],
+    typeSpeed:10,
     loop:true
 })
 

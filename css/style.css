@@ -296,7 +296,7 @@ ul{
 .home .home-info{
     flex: 0 0 60%;
     max-width: 60%;
-    /* background-color: tomato; */
+    /* background-color: rgb(214, 209, 208); */
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -307,9 +307,11 @@ ul{
     font-size: 20px;
     color: var(--text-black-700);
 }
+.home .home-info p b{
+    color: var(--skin-color);
+}
 .home h3.hello{
     font-size: 30px;
-    margin: 15px 0;
 }
 .home h3.hello span{
     font-family: 'Clicker script', cursive;
@@ -319,7 +321,7 @@ ul{
 }
 .home h3.my-profession{
     font-size: 25px;
-    margin: 15px 0;
+    margin-bottom: 20px;
 }
 .typing{
     color: var(--skin-color);
@@ -333,6 +335,10 @@ ul{
     /* border: 1px solid gray; */
     text-align: center;
     position: relative;
+}
+.home .home-img img{
+    width: 100%;
+    object-fit: cover;
 }
 .home-img::after{
     content: "";
@@ -390,6 +396,7 @@ ul{
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
+    width: 50%;
 }
 
 .about .about-content .personal-info{
@@ -431,7 +438,7 @@ ul{
 
 .about .about-content .skills .skill-item{
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 50%;
 }
 .about .about-content .skills .skill-item h5{
     line-height: 40px;
@@ -480,7 +487,7 @@ ul{
     font-size: 24px;
     margin-bottom: 30px;
     font-weight: 700;
-    color: var(--text-black-900);
+    color: var(--skin-color);
 }
 .about .about-content .timeline-box{
     flex: 0 0 100%;
@@ -532,7 +539,7 @@ ul{
 .about .about-content .timeline .timeline-title{
     font-weight: 700;
     font-size: 18px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     text-transform: capitalize;
     color: var(--text-black-900);
 }

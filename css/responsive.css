@@ -1,3 +1,21 @@
+
+:root{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+}
+
+body.dark{
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#ffffff;
+    --text-black-700:#e9e9e9;
+}
+
+
 /* ================================================ Responsive Part ===================================== */
 @media (max-width:1199px) {
     .section .container{
@@ -6,6 +24,7 @@
     .aside{
         left: -270px;
     }
+    
     .aside.open{
         left: 0;
     }
@@ -46,6 +65,7 @@
 
 
 @media (max-width:767px){
+    
     .about .about-content .personal-info,
     .about .about-content .skills,
     .about .about-content .education,
@@ -57,6 +77,30 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    .home .row{
+        flex-direction: column-reverse;
+    }
+    .home .home-img{
+        width: fit-content;
+        display: block;
+        height: 40vh;
+        margin-bottom: 20px;
+        
+    }
+    .home .home-img img{
+        border: 2px solid var(--text-black-900);
+        width: 310px;
+        height: 310px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    .home .home-img::before,
+    .home .home-img::after{
+        display: none;
+    }
+    
     .home h3.hello span{
         line-height: 1;
     }
@@ -65,8 +109,38 @@
         margin: 15px 0;
     }
     .home .home-info p{
-        font-size: 15px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .aside{
+        left: -100%;
+        width: 100%;
+    }
+    .aside .nav li a{
+        font-size: 30px;
+        border-bottom: 2px solid var(--bg-black-50);
     }
 
+    .aside.open{
+        left: 0;
+    }
+    .aside .nav-toggler{
+        display: flex;
+        left: 10px;
+        top: 10px;
+    }
+    .aside .nav-toggler.open{
+        left: 317px;
+        top: 10px;
+    }
+    .about .about-content .about-text p{
+        width: 100%;
+    }
 
+}
+@media (max-width:500px){
+    .home-contact-btn{
+        display: none;
+    }
 }
