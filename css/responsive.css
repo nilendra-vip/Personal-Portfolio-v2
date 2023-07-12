@@ -108,11 +108,19 @@ body.dark{
         font-size: 23px;
         margin: 15px 0;
     }
+    .home .home-info{
+        text-align: center;
+        padding-bottom: 5px;
+    }
     .home .home-info p{
         font-size: 15px;
     }
     .home .home-info a{
         margin-top: 15px;
+    }
+    #home .btn{
+        width: 100%;
+        
     }
     
     .aside{
