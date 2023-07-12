@@ -325,7 +325,8 @@ ul{
     font-size: 25px;
     margin-bottom: 20px;
 }
-.typing{
+.homePageTyping,
+.aboutPageTyping{
     color: var(--skin-color);
     
 }

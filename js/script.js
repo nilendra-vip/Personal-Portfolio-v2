@@ -43,7 +43,12 @@ window.addEventListener("load",() =>{
 
 
 // Text animation
-var typed = new Typed(".typing",{
+var typed = new Typed(".homePageTyping , .aboutPageTyping",{
+    strings:["Front-End Developer","Back-End Developer","UI Designer", "Freelancer"],
+    typeSpeed:10,
+    loop:true
+})
+var typed = new Typed(".aboutPageTyping",{
     strings:["Front-End Developer","Back-End Developer","UI Designer", "Freelancer"],
     typeSpeed:10,
     loop:true
