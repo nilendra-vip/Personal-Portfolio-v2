@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1,500&display=swap');
 :root{
     --bg-black-900:#f2f2fc;
     --bg-black-100:#fdf9ff;
@@ -100,17 +100,24 @@ body.dark{
     .home .home-img::after{
         display: none;
     }
+
+    .home h3.hello{
+        font-size: 35px;
+    }
     
     .home h3.hello span{
+        font-size: 40px;
         line-height: 1;
+        font-family: 'Montserrat', sans-serif;
     }
     .home h3.my-profession{
-        font-size: 23px;
-        margin: 15px 0;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
     .home .home-info{
         text-align: center;
-        padding-bottom: 5px;
+        /* padding-bottom: 5px; */
     }
     .home .home-info p{
         font-size: 15px;
