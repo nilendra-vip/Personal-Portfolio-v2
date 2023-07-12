@@ -303,12 +303,14 @@ ul{
     justify-content: center;
 }
 .home .home-info p{
-    margin-bottom: 70px;
     font-size: 20px;
     color: var(--text-black-700);
 }
 .home .home-info p b{
     color: var(--skin-color);
+}
+.home .home-info a{
+    margin-top: 70px;
 }
 .home h3.hello{
     font-size: 30px;
