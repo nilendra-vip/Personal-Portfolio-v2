@@ -732,6 +732,7 @@ ul{
 }
 .contact .contact-form .form-item textarea.form-control{
     height: 100px;
+    resize: none;
 }
 .contact .contact-form .btn{
     height: 50px;
