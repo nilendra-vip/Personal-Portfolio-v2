@@ -33,7 +33,7 @@ body.dark{
         left: 30px;
     }
     .aside .nav-toggler.open{
-        left: 300px;
+        left: 30px;
     }
     .section{
         left: 0;
@@ -133,12 +133,28 @@ body.dark{
         top: 10px;
     }
     .aside .nav-toggler.open{
-        left: 317px;
+        left: 10px;
         top: 10px;
     }
     .about .about-content .about-text p{
         width: 100%;
     }
+    .project .project-item-inner .project-img button{
+        padding: 10px 20px;
+    }
+
+    .viewMorePro{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 40px 0 ;
+    }
+    .viewMorePro button{
+        scale: 1;
+    }
+
+    
 
 }
 @media (max-width:500px){

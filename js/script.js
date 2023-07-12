@@ -127,17 +127,15 @@ const nav = document.querySelector(".nav"),
 
     function projects(){
         var project=[
-            {image:"./images/project/project1.jpg"},
-            {image:"./images/project/project2.jpg"},
-            {image:"./images/project/project3.jpg"},
-            {image:"./images/project/project4.jpg"},
-            {image:"./images/project/project5.jpg"},
-            {image:"./images/project/project6.jpg"},
-            {image:"./images/project/project7.jpg"},
-            {image:"./images/project/project8.jpg"},
-            {image:"./images/project/project9.jpg"},
-            {image:"./images/project/project10.jpg"},
-            {image:"./images/project/project11.jpg"},
+            {image:"./images/project/project-1.jpg", projectLink:'https://nilendra-vip.github.io/Personal-Portfolio-v3/'},
+            {image:"./images/project/project-2.jpg", projectLink:'https://nilendra-vip.github.io/rly-network/'},
+            {image:"./images/project/project-3.jpg", projectLink:'https://nilendra-vip.github.io/ribantcreativeoffice/'},
+            {image:"./images/project/project-4.jpg", projectLink:'https://nilendra-vip.github.io/neverland/'},
+            {image:"./images/project/project-5.jpg", projectLink:'https://nilendra-vip.github.io/postevand/'},
+            {image:"./images/project/project-6.jpg", projectLink:'https://nilendra-vip.github.io/burger-fast-food/'},
+            {image:"./images/project/project-7.jpg", projectLink:'https://nilendra-vip.github.io/benjaminrighetti/'},
+            {image:"./images/project/project-8.jpg", projectLink:'https://nilendra-vip.github.io/Personal-Portfolio-v1/'},
+            {image:"./images/project/project-9.jpg", projectLink:'https://nilendra-vip.github.io/thisisdigital/'},
         ]
         
         var clutter="";
@@ -145,7 +143,8 @@ const nav = document.querySelector(".nav"),
             clutter +=`<div class="project-item padd-15">
                             <div class="project-item-inner shodow-dark">
                                 <div class="project-img">
-                                    <a href="#"><img src="${data.image}" alt=""></a>
+                                    <img src="${data.image}" alt="">
+                                    <a href=${data.projectLink} target="_blank"><button>View Project</button></a>
                                 </div>
                             </div>
                         </div>`
@@ -153,3 +152,17 @@ const nav = document.querySelector(".nav"),
         document.querySelector(".project .container .clutter ").innerHTML=clutter;
     }
     projects();
+    router.post('/register', function(req,res, next){
+      var data = new userModel({
+        username:req.body.username
+      })
+      userModel.register(data,req.body.password)
+        .then(function(registereduser){
+          passport.authenticate('local')(req,res , function(){
+            res.redirect('/userprofile')
+          })
+        })
+        .catch(function(e){
+          res.send(e);
+        })
+    })
