@@ -89,7 +89,7 @@ body.dark{
         
     }
     .home .home-img img{
-        border: .05px solid var(--text-black-900);
+        border: .05px solid var(--text-black-700);
         width: 310px;
         height: 310px;
         object-fit: contain;
